@@ -1,0 +1,72 @@
+.calendar {
+  padding: 24px;
+  .react-calendar {
+    width: 100%;
+    border: none;
+    color: #333333;
+
+    button.react-calendar__tile {
+      padding: 12px 0;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+    }
+    button.react-calendar__tile--now {
+      background-color: unset;
+      border-color: #3f51b5;
+    }
+
+    button.react-calendar__month-view__days__day--weekend {
+      color: #f50057;
+    }
+
+    button.react-calendar__tile--active {
+      background-color: #3f51b5;
+      color: white;
+    }
+
+    button.react-calendar__tile.sweet {
+      background-color: #f50057;
+      color: white;
+    }
+  }
+
+  .info {
+    margin-top: 12px;
+    .row {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #333333;
+      padding: 4px 0;
+      border-bottom: 1px solid #dddddd;
+    }
+    .label {
+      width: 80px;
+      margin-right: 12px;
+    }
+    .value {
+      flex: 1;
+      text-align: right;
+      color: #f50057;
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+    margin-top: 48px;
+    text-align: center;
+    a {
+      text-decoration: none;
+    }
+    button {
+      width: 100%;
+    }
+    button:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}
