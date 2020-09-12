@@ -9,7 +9,7 @@ import { ISetting } from '@/store/models/setting';
 
 import dayjs from 'dayjs';
 
-import 'react-calendar/dist/Calendar.css';
+import './calendar.less';
 import './calendar.scss';
 
 export interface IProps extends RouteComponentProps {

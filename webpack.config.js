@@ -44,6 +44,10 @@ module.exports = {
         use: [...commonCssLoaders, 'sass-loader'],
       },
       {
+        test: /\.less$/,
+        use: [...commonCssLoaders, 'less-loader'],
+      },
+      {
         test: /\.css$/,
         use: commonCssLoaders,
       },

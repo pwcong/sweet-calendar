@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Redirect,
   Route,
@@ -15,11 +15,7 @@ const App: React.FunctionComponent = () => {
   return (
     <Router>
       <Switch>
-        <Route
-          path="/"
-          exact={true}
-          render={() => <Redirect to="/calendar" />}
-        ></Route>
+        <Redirect exact={true} from="/" to="/calendar" />
         <Route path="/calendar" exact={true} component={Calendar} />
         <Route path="/setting" exact={true} component={Setting} />
       </Switch>
