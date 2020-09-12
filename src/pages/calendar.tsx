@@ -98,7 +98,7 @@ const Page: React.FunctionComponent<IProps> = (props) => {
         {!!selected && (
           <>
             <Button variant="outlined" color="secondary" onClick={handleCalc}>
-              This is the first working day
+              This is the sweeting day
             </Button>
             <Button variant="outlined" onClick={handleCancel}>
               Cancel
