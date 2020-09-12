@@ -79,7 +79,7 @@ const Page: React.FunctionComponent<IProps> = (props) => {
         />
       </div>
       <div className="info">
-        <div className="row">
+        <div className="row" onClick={handleCancel}>
           <div className="label">Now</div>
           <div className="value">
             {dayjs(now).format('YYYY-MM-DD HH:mm:ss')}
