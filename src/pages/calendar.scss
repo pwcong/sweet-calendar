@@ -10,6 +10,11 @@
       border: 1px solid transparent;
       transition: all 0.2s;
     }
+
+    button.react-calendar__tile--hasActive {
+      background-color: #3f51b5;
+    }
+
     button.react-calendar__tile--now {
       background-color: unset;
       border-color: #3f51b5;

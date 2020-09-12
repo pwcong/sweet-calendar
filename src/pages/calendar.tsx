@@ -62,7 +62,11 @@ const Page: React.FunctionComponent<IProps> = (props) => {
     return () => clearInterval(timer);
   });
 
-  const handleCalc = useCallback(() => setDate(selected.getTime()), [selected]);
+  const handleCalc = useCallback(() => {
+    setDate(selected.getTime());
+    setCurrent(new Date());
+    setSelected(undefined);
+  }, [selected, key]);
 
   return (
     <div className="calendar">
